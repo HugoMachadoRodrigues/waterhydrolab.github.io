@@ -1,0 +1,46 @@
+# =============================================================================
+#  Social links and external profiles for the Watershed Hydrology Lab.
+# =============================================================================
+#  These appear as icons on the homepage (about.md) and at the bottom of
+#  profile pages. Icons are rendered automatically by the jekyll-socials
+#  plugin: https://github.com/george-gca/jekyll-socials
+#
+#  Each key (orcid, scholar_userid, etc.) maps to a known icon. To enable a
+#  link, fill in the value. To hide a link, comment the line out with a #.
+#  Order in this file = order shown on the page.
+#
+#  When adding social profiles for individual lab members later, you can
+#  duplicate this file (e.g. _data/socials_saba.yml) and reference it from
+#  the member's profile page.
+# =============================================================================
+
+# ----- Primary contact -----
+# Lab inbox. The old site used hydrologyrcrecflorida@gmail.com — please
+# confirm with Dr. Golmohammadi whether to use her UF email or the Gmail.
+email: g.golmohammadi@ufl.edu
+
+# ----- Academic identifiers (PI: Dr. Golmar Golmohammadi) -----
+orcid_id: 0000-0001-5532-3892          # ORCID — https://orcid.org/0000-0001-5532-3892
+scholar_userid: cpXxmlYAAAAJ           # Google Scholar — VERIFY this ID with Dr. Golmohammadi before going live
+researchgate_profile: Golmar-Golmohammadi  # ResearchGate slug
+# scopus_id:                            # Scopus author ID (not yet known — add when found)
+# semanticscholar_id:                   # Semantic Scholar author ID
+# publons_id:                           # Publons / Web of Science
+
+# ----- Lab social media -----
+x_username: WaterHydroLab              # X / Twitter — https://x.com/WaterHydroLab
+linkedin_username: in/golmar-golmohammadi-35791a17    # PI's LinkedIn; replace with lab company-page slug if/when created
+github_username: waterhydrolab         # GitHub organisation that owns this repository
+
+# ----- Optional university profile (custom entry — al-folio supports any
+#       link by giving it a custom logo + URL) -----
+custom_social:
+  logo: https://soils.ifas.ufl.edu/media/soilsifasufledu/sws-main-site/images/UF_IFAS_horizontal.svg
+  title: UF/IFAS faculty page
+  url: https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/
+
+# ----- RSS icon for the news feed -----
+rss_icon: true
+
+# ----- Optional CV PDF (uncomment and place file in /assets/pdf/) -----
+# cv_pdf: /assets/pdf/Golmohammadi_CV.pdf
