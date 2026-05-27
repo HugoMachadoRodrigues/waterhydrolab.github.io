@@ -1,0 +1,119 @@
+/*
+ * Tailwind entry for the Watershed Hydrology Lab site.
+ *
+ * Referenced from `_config.yml → al_folio.tailwind.css_entry`. The
+ * `al_folio_core` gem compiles this together with its own base layer
+ * during the Jekyll build.
+ *
+ * Goal: bring the visual identity from the original index.html
+ * standalone (dark navy + cyan/blue/purple gradients + Inter/Fraunces
+ * typography) into the al-folio Jekyll site.
+ *
+ * The file is intentionally additive — it does not import al-folio's
+ * own Tailwind layers (the gem handles that). It declares design
+ * tokens via `@theme` (Tailwind 4 syntax) so utility classes like
+ * `bg-bg`, `text-accent` resolve, and also exposes them as CSS
+ * variables for hand-written rules.
+ */
+
+@theme {
+  /* Surface colors */
+  --color-bg: #0a1628;
+  --color-bg-2: #0f1e36;
+  --color-surface: #142847;
+  --color-surface-2: #1a3358;
+  --color-line: rgb(255 255 255 / 8%);
+
+  /* Text */
+  --color-text: #e8eef7;
+  --color-muted: #9bb0cc;
+
+  /* Accent palette */
+  --color-accent: #22d3ee;    /* cyan — water */
+  --color-accent-2: #3b82f6;  /* blue */
+  --color-accent-3: #10b981;  /* emerald — sustainability */
+  --color-accent-4: #8b5cf6;  /* violet — used in gradient stop */
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+/* Plain-CSS aliases so non-Tailwind files (al-folio includes, custom
+   blocks in Markdown, etc.) can reach the same tokens. */
+:root {
+  --whl-bg: #0a1628;
+  --whl-bg-2: #0f1e36;
+  --whl-surface: #142847;
+  --whl-surface-2: #1a3358;
+  --whl-line: rgb(255 255 255 / 8%);
+  --whl-text: #e8eef7;
+  --whl-muted: #9bb0cc;
+  --whl-accent: #22d3ee;
+  --whl-accent-2: #3b82f6;
+  --whl-accent-3: #10b981;
+  --whl-accent-4: #8b5cf6;
+  --whl-gradient: linear-gradient(135deg, #22d3ee 0%, #3b82f6 50%, #8b5cf6 100%);
+  --whl-gradient-soft: linear-gradient(135deg, rgb(34 211 238 / 15%), rgb(59 130 246 / 15%));
+  --whl-shadow: 0 20px 60px -20px rgb(0 0 0 / 50%);
+}
+
+/* Web fonts — same families the standalone landing used. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
+
+/* Default to dark color scheme so the dark-mode CSS path is preferred
+   by browsers that respect `color-scheme` (still overridable by the
+   al-folio dark-mode toggle, which writes the actual `data-theme`). */
+html {
+  color-scheme: dark;
+}
+
+/* Animated background — three soft radial gradients + a subtle grid,
+   exactly as in the standalone. Rendered behind everything via `z-index`.
+
+   The al-folio gem already paints a `body` background; we only kick in
+   when no element claims the page background (i.e. on `html`), so this
+   is non-invasive. */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(900px 600px at 10% -10%, rgb(34 211 238 / 18%), transparent 60%),
+    radial-gradient(900px 600px at 90% 10%, rgb(139 92 246 / 15%), transparent 60%),
+    radial-gradient(800px 600px at 50% 100%, rgb(16 185 129 / 12%), transparent 60%),
+    var(--whl-bg);
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 4%) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 80%);
+}
+
+/* Heading family — Fraunces serif for hierarchy. */
+h1, h2, h3, h4, h5, h6,
+.al-h1, .al-h2, .al-h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Utility class for the signature gradient text used in the standalone
+   hero. Apply with `<span class="whl-gradient-text">…</span>`. */
+.whl-gradient-text {
+  background: var(--whl-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
