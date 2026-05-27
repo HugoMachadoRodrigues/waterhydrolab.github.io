@@ -15,8 +15,10 @@
 # =============================================================================
 
 # ----- Primary contact -----
-# Lab inbox. The old site used hydrologyrcrecflorida@gmail.com — please
-# confirm with Dr. Golmohammadi whether to use her UF email or the Gmail.
+# The legacy ufrcrecwater.com site listed hydrologyrcrecflorida@gmail.com
+# as a lab inbox, but the PI uses her UF email as the canonical contact.
+# `email:` below sets the e-mail icon target in the homepage social row
+# and is also the address shown on the contact page.
 email: g.golmohammadi@ufl.edu
 
 # ----- Academic identifiers (PI: Dr. Golmar Golmohammadi) -----
@@ -28,9 +30,18 @@ researchgate_profile: Golmar-Golmohammadi  # ResearchGate slug
 # publons_id:                           # Publons / Web of Science
 
 # ----- Lab social media -----
+# CONFIRMED handles (per Dr. Golmohammadi / PI):
+#   X / Twitter — https://x.com/WaterHydroLab
+#   GitHub      — https://github.com/waterhydrolab
+# NOTE: the legacy ufrcrecwater.com site lists Instagram, Facebook, YouTube,
+# and a lab LinkedIn under the handle `ufrecwater` — those are NOT the lab's
+# current accounts. Do not link to them unless the PI confirms.
 x_username: WaterHydroLab              # X / Twitter — https://x.com/WaterHydroLab
 linkedin_username: in/golmar-golmohammadi-35791a17    # PI's LinkedIn; replace with lab company-page slug if/when created
 github_username: waterhydrolab         # GitHub organisation that owns this repository
+# instagram_id:                        # add if the lab confirms an IG handle
+# facebook_id:                         # add if the lab confirms an FB page
+# youtube_id:                          # add if the lab confirms a YouTube channel
 
 # ----- Optional university profile (custom entry — al-folio supports any
 #       link by giving it a custom logo + URL) -----

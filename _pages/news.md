@@ -24,3 +24,11 @@ nav_order: 6
 ---
 
 {% include news.liquid %}
+
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="/feed.xml"><i class="fas fa-rss"></i> Subscribe via RSS</a>
+  <a class="whl-btn" href="https://x.com/WaterHydroLab" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> Follow @WaterHydroLab</a>
+  <a class="whl-btn" href="https://github.com/waterhydrolab" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+  <a class="whl-btn" href="https://www.linkedin.com/in/golmar-golmohammadi-35791a17/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a class="whl-btn whl-btn-ghost" href="/contact/"><i class="fas fa-paper-plane"></i> Contact the lab</a>
+</div>

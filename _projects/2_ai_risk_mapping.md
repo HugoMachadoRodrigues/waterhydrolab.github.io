@@ -42,3 +42,11 @@ Florida.
   Assessment (2024).
 - *Projections of meteorological drought severity-duration variations
   based on CMIP6* — Scientific Reports (2024).
+
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="mailto:g.golmohammadi@ufl.edu?subject=Collaboration%20%E2%80%94%20AI-Driven%20Environmental%20Risk%20Mapping"><i class="fas fa-handshake"></i> Collaborate on this research</a>
+  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> Meet the team</a>
+  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> All publications</a>
+  <a class="whl-btn" href="https://github.com/waterhydrolab" target="_blank" rel="noopener"><i class="fab fa-github"></i> Lab GitHub</a>
+  <a class="whl-btn whl-btn-ghost" href="/projects/"><i class="fas fa-arrow-left"></i> All research themes</a>
+</div>

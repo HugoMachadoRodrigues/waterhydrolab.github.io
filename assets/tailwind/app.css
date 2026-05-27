@@ -117,3 +117,113 @@ h1, h2, h3, h4, h5, h6,
   background-clip: text;
   color: transparent;
 }
+
+/* =============================================================================
+   Buttons — used on the homepage, contact page, profile bios, and project
+   pages. Buttons are rendered as Markdown <a> tags with these classes:
+
+     <a class="whl-btn whl-btn-primary" href="...">Label</a>
+     <a class="whl-btn"                 href="...">Label</a>
+     <a class="whl-btn whl-btn-ghost"   href="...">Label</a>
+
+   Group multiple buttons inside a `.whl-btn-row` for consistent spacing.
+   ============================================================================= */
+
+.whl-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 1.25rem 0;
+  align-items: center;
+}
+
+.whl-btn-row.whl-btn-row-center { justify-content: center; }
+
+.whl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--whl-line);
+  border-radius: 0.625rem;
+  background: var(--whl-surface);
+  color: var(--whl-text) !important;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.whl-btn:hover,
+.whl-btn:focus-visible {
+  background: var(--whl-surface-2);
+  border-color: rgb(34 211 238 / 50%);
+  transform: translateY(-1px);
+  box-shadow: var(--whl-shadow);
+  text-decoration: none !important;
+}
+
+.whl-btn:active { transform: translateY(0); }
+
+.whl-btn-primary {
+  background: var(--whl-gradient);
+  border-color: transparent;
+  color: #0a1628 !important;
+  font-weight: 600;
+}
+
+.whl-btn-primary:hover,
+.whl-btn-primary:focus-visible {
+  background: var(--whl-gradient);
+  filter: brightness(1.08);
+  border-color: transparent;
+}
+
+.whl-btn-ghost {
+  background: transparent;
+}
+
+.whl-btn-ghost:hover,
+.whl-btn-ghost:focus-visible {
+  background: var(--whl-gradient-soft);
+}
+
+.whl-btn i,
+.whl-btn svg { font-size: 1em; }
+
+/* =============================================================================
+   Surfaces — content cards used by the contact page and on the homepage to
+   group related links / facts.
+   ============================================================================= */
+
+.whl-card {
+  background: var(--whl-surface);
+  border: 1px solid var(--whl-line);
+  border-radius: 0.875rem;
+  padding: 1.25rem 1.4rem;
+  margin: 1rem 0;
+  box-shadow: var(--whl-shadow);
+}
+
+.whl-card h3,
+.whl-card h4 { margin-top: 0; }
+
+.whl-card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1.25rem 0;
+}
+
+.whl-callout {
+  background: var(--whl-gradient-soft);
+  border: 1px solid rgb(34 211 238 / 25%);
+  border-radius: 0.875rem;
+  padding: 1.1rem 1.3rem;
+  margin: 1.25rem 0;
+}
+
+.whl-callout p:last-child { margin-bottom: 0; }

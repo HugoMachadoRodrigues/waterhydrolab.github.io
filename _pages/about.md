@@ -34,9 +34,8 @@ profile:
   # the lab's mailing address, phone, and email.
   more_info: >
     <p><strong>UF/IFAS RCREC</strong></p>
-    <p>3401 Experiment Station</p>
-    <p>Ona, FL 33865</p>
-    <p>Phone: (863) 374-7053</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=3401+Experiment+Station+Ona+FL+33865" target="_blank" rel="noopener">3401 Experiment Station<br>Ona, FL 33865</a></p>
+    <p>Phone: <a href="tel:+18633747053">(863) 374-7053</a></p>
     <p>Email: <a href="mailto:g.golmohammadi@ufl.edu">g.golmohammadi@ufl.edu</a></p>
 
 # Show a "Selected publications" section below the bio. Papers marked
@@ -69,6 +68,13 @@ our integrated research and Extension program develops sustainable water
 management practices that conserve water and protect water quality under
 changing climate and land-use conditions.
 
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="/projects/"><i class="fas fa-flask"></i> Explore our research</a>
+  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> Meet the team</a>
+  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> Read publications</a>
+  <a class="whl-btn" href="/contact/"><i class="fas fa-paper-plane"></i> Contact / Join the lab</a>
+</div>
+
 We combine physically-based hydrologic and water-quality models (SWAT+,
 MODFLOW, DRAINMOD), machine-learning and deep-learning approaches,
 geospatial analysis with Earth-observation data, and an extensive
@@ -78,11 +84,51 @@ sustainability.
 
 ### Research themes
 
-- **Hydrologic and water-quality modeling** at field and watershed scales — quantifying flow, storage, and nutrient transport.
-- **AI-driven environmental risk mapping** — flood, drought, and groundwater-vulnerability assessment with explainable AI.
-- **Data-driven decision support** for sustainable agriculture — integrating modeling, sensor networks, and stakeholder input to evaluate Best Management Practices (BMPs).
+<div class="whl-card-grid" markdown="1">
+<div class="whl-card" markdown="1">
+**Hydrologic & water-quality modeling**
+Field-to-watershed simulation of flow, storage, and nutrient transport
+with SWAT+, MODFLOW, and DRAINMOD.
 
-Browse the [research](/projects/), [people](/people/), [publications](/publications/),
-and [facilities](/facilities/) pages for more detail. You can also follow our work on
-[X / Twitter](https://x.com/WaterHydroLab), [LinkedIn](https://www.linkedin.com/in/golmar-golmohammadi-35791a17/),
-[ORCID](https://orcid.org/0000-0001-5532-3892), and [ResearchGate](https://www.researchgate.net/profile/Golmar-Golmohammadi).
+<a class="whl-btn whl-btn-ghost" href="/projects/1_hydrologic_modeling/"><i class="fas fa-arrow-right"></i> Learn more</a>
+</div>
+
+<div class="whl-card" markdown="1">
+**AI-driven environmental risk mapping**
+Geospatial machine learning for flood, drought, and groundwater
+vulnerability, with explainable AI.
+
+<a class="whl-btn whl-btn-ghost" href="/projects/2_ai_risk_mapping/"><i class="fas fa-arrow-right"></i> Learn more</a>
+</div>
+
+<div class="whl-card" markdown="1">
+**Data-driven decision support**
+Integrating models, sensor networks, and stakeholder input to evaluate
+Best Management Practices (BMPs) for sustainable agriculture.
+
+<a class="whl-btn whl-btn-ghost" href="/projects/3_decision_support/"><i class="fas fa-arrow-right"></i> Learn more</a>
+</div>
+</div>
+
+### Explore the lab
+
+<div class="whl-btn-row">
+  <a class="whl-btn" href="/projects/"><i class="fas fa-flask"></i> Research themes</a>
+  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> People</a>
+  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> Publications</a>
+  <a class="whl-btn" href="/facilities/"><i class="fas fa-microscope"></i> Facilities</a>
+  <a class="whl-btn" href="/news/"><i class="fas fa-bullhorn"></i> News</a>
+  <a class="whl-btn whl-btn-primary" href="/contact/"><i class="fas fa-paper-plane"></i> Contact</a>
+</div>
+
+### Follow our work
+
+<div class="whl-btn-row">
+  <a class="whl-btn" href="https://x.com/WaterHydroLab" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> @WaterHydroLab</a>
+  <a class="whl-btn" href="https://github.com/waterhydrolab" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+  <a class="whl-btn" href="https://www.linkedin.com/in/golmar-golmohammadi-35791a17/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a class="whl-btn" href="https://orcid.org/0000-0001-5532-3892" target="_blank" rel="noopener"><i class="fab fa-orcid"></i> ORCID</a>
+  <a class="whl-btn" href="https://scholar.google.com/citations?user=cpXxmlYAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+  <a class="whl-btn" href="https://www.researchgate.net/profile/Golmar-Golmohammadi" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i> ResearchGate</a>
+  <a class="whl-btn whl-btn-ghost" href="/feed.xml"><i class="fas fa-rss"></i> RSS</a>
+</div>

@@ -16,6 +16,21 @@
 #
 #  TIP: the `align` field alternates left/right per entry, which produces
 #  the zig-zag layout. Keep alternating.
+#
+#  TEAM PHOTOS — DOWNLOAD FROM OLD LAB SITE
+#  ----------------------------------------
+#  The old site at ufrcrecwater.com hosts real headshots for every
+#  current and former member in a private S3 bucket (no public access,
+#  signed URLs only). To replace the SVG placeholders below:
+#    1. Open ufrcrecwater.com/team in a browser.
+#    2. Right-click → "Save image as…" for each member.
+#    3. Save into  assets/img/team/  using these filenames:
+#         saba_shaghaghi.jpg     gurjoban_tiwana.jpg
+#         namrata_ghimire.jpg    akhil_reddy.jpg
+#         bhavan_voram.jpg       armaanjot_singh.jpg
+#         seyed_mostafa.jpg      rohith_reddy.jpg
+#         maxwell_naah.jpg
+#    4. Replace ".svg" with ".jpg" on each `image:` line below.
 # =============================================================================
 layout: profiles
 permalink: /people/
@@ -100,3 +115,18 @@ profiles:
       <p><strong>Lab Alumni</strong></p>
       <p>Former students and research staff</p>
 ---
+
+<div class="whl-callout" markdown="1">
+**Interested in joining the lab?** We welcome inquiries from prospective
+M.S., Ph.D., and postdoctoral researchers with backgrounds in hydrology,
+soil and water sciences, agricultural engineering, environmental science,
+and related fields.
+</div>
+
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="/contact/#join-the-lab"><i class="fas fa-user-graduate"></i> Join the lab</a>
+  <a class="whl-btn" href="mailto:g.golmohammadi@ufl.edu?subject=Prospective%20student%20inquiry%20%E2%80%94%20Watershed%20Hydrology%20Lab"><i class="fas fa-envelope"></i> Email the PI</a>
+  <a class="whl-btn" href="/projects/"><i class="fas fa-flask"></i> Research themes</a>
+  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> Publications</a>
+  <a class="whl-btn whl-btn-ghost" href="/contact/"><i class="fas fa-paper-plane"></i> Contact</a>
+</div>

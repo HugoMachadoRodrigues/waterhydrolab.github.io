@@ -47,3 +47,11 @@ related works:
   Yield Using the DRAINMOD Model* — Hydrology (2020).
 - *Designing a deep learning-based framework for the prediction of lake
   surface closed curves* — Earth Science Informatics (2025).
+
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="mailto:g.golmohammadi@ufl.edu?subject=Collaboration%20%E2%80%94%20Hydrologic%20%26%20Water%20Quality%20Modeling"><i class="fas fa-handshake"></i> Collaborate on this research</a>
+  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> Meet the team</a>
+  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> All publications</a>
+  <a class="whl-btn" href="/facilities/"><i class="fas fa-microscope"></i> Field instrumentation</a>
+  <a class="whl-btn whl-btn-ghost" href="/projects/"><i class="fas fa-arrow-left"></i> All research themes</a>
+</div>

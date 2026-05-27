@@ -78,3 +78,13 @@ analyses of collected soil, water, and forage samples.
 - **AQ300 Discrete Analyzer.** 2026 – present. Automated nutrient and
   chemical analysis (nitrate, ammonia, phosphate) of water, wastewater,
   and soil samples via robotic sampling and spectrophotometry.
+
+### Visit, tour, or partner with the lab
+
+<div class="whl-btn-row">
+  <a class="whl-btn whl-btn-primary" href="mailto:g.golmohammadi@ufl.edu?subject=Lab%20tour%20%2F%20facilities%20inquiry%20%E2%80%94%20Watershed%20Hydrology%20Lab"><i class="fas fa-envelope"></i> Request a tour or data</a>
+  <a class="whl-btn" href="https://rcrec-ona.ifas.ufl.edu/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> RCREC website</a>
+  <a class="whl-btn" href="https://www.google.com/maps/search/?api=1&query=3401+Experiment+Station+Ona+FL+33865" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Directions to RCREC</a>
+  <a class="whl-btn" href="/projects/"><i class="fas fa-flask"></i> Research themes</a>
+  <a class="whl-btn whl-btn-ghost" href="/contact/"><i class="fas fa-paper-plane"></i> Contact</a>
+</div>
