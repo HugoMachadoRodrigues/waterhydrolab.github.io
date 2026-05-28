@@ -65,7 +65,8 @@ description: > # the ">" symbol means: ignore newlines until the next top-level 
 # The al-folio MIT license obligation is satisfied by the LICENSE file in the
 # repo, so no visible theme credit is required.
 footer_text: >
-  UF/IFAS Range Cattle Research and Education Center · University of Florida
+  UF/IFAS Range Cattle Research and Education Center · University of Florida ·
+  <a href="/admin/" title="Sign in to edit the site (admins only)">Site editor</a>
 
 # Keywords help search engines categorize the site.
 keywords: watershed hydrology, water quality modeling, SWAT, DRAINMOD, BMPs, machine learning in hydrology, Florida hydrology, University of Florida, IFAS, RCREC, soil water ecosystem sciences, Golmar Golmohammadi

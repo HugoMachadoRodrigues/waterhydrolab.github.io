@@ -2,14 +2,14 @@
 # =============================================================================
 #  FACILITIES  ( /facilities/ )
 # =============================================================================
-#  Lists the field-instrumentation network at RCREC and DeLuca Preserve, plus
-#  the laboratory equipment in the RCREC Hydrology Lab.
-#
-#  To add a new instrument:
-#    - Drop its photo in /assets/img/instruments/ (or use a placeholder).
-#    - Add a new entry to the unordered list below, matching the existing
-#      formatting. Include the instrument name in bold, deployment dates,
-#      location, and a one-paragraph description.
+#  Field-instrumentation network at RCREC and the DeLuca Preserve plus the
+#  RCREC Hydrology Lab equipment, shown as a map + instrument cards + a media
+#  gallery. Everything below the front matter is editable in the CMS
+#  (Other Pages -> Facilities), including inserting photos, maps, and videos:
+#    - Photo:  use the image button in the CMS editor (uploads to
+#              /assets/img/uploads/) — or write ![caption](/assets/img/uploads/file.jpg)
+#    - Map:    paste a Google Maps "embed" iframe inside a <div class="whl-map"> … </div>
+#    - Video:  paste a YouTube/Vimeo embed iframe inside a <div class="whl-embed"> … </div>
 # =============================================================================
 layout: page
 permalink: /facilities/
@@ -19,67 +19,149 @@ nav: true
 nav_order: 4
 ---
 
-A comprehensive suite of field instruments has been deployed across
-research sites at the **Range Cattle Research and Education Center
-(RCREC)** and the **DeLuca Preserve** to collect high-resolution data on
-hydrological, soil, forage, and atmospheric conditions. This network
-includes weather stations, soil-moisture sensors, lysimeters,
-groundwater wells with continuous water-level sensors, surface-water
-flow meters, and water-quality sondes. All instruments are integrated
-with data loggers and telemetry systems for continuous recording and
-remote access, supporting detailed water-balance and water-quality
-analyses. The **RCREC Hydrology Laboratory** is equipped to conduct
-analyses of collected soil, water, and forage samples.
+A comprehensive suite of field instruments is deployed across research sites at
+the **Range Cattle Research and Education Center (RCREC)** and the **DeLuca
+Preserve** to collect high-resolution data on hydrological, soil, forage, and
+atmospheric conditions. Weather stations, soil-moisture sensors, lysimeters,
+groundwater wells, surface-water flow meters, and water-quality sondes feed
+data loggers and telemetry systems for continuous, remotely accessible
+monitoring — supporting detailed water-balance and water-quality analyses. The
+**RCREC Hydrology Laboratory** then analyzes the collected soil, water, and
+forage samples.
 
-### Field instrumentation
+## Where We Work
 
-- **Hydrometric Station — SonTek acoustic Doppler flow meter.** RCREC
-  and DeLuca Preserve, 2023 – present. Continuously measures stream and
-  open-channel discharge, velocity, water level, flow direction,
-  temperature, and diagnostic quality metrics.
+<div class="whl-map">
+  <iframe
+    title="Map of RCREC field sites — 3401 Experiment Station, Ona, FL"
+    src="https://maps.google.com/maps?q=3401%20Experiment%20Station%2C%20Ona%2C%20FL%2033865&z=13&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen></iframe>
+</div>
 
-- **Weather Station.** RCREC, 2024 – present. Monitors air temperature,
-  humidity, rainfall, wind, and solar radiation; integrated with a data
-  logger for real-time remote monitoring.
+## Field Instrumentation
 
-- **Lysimeter.** RCREC, 2024 – present. Measures water movement through
-  the soil profile and collects percolated water to quantify subsurface
-  drainage and solute (e.g., nitrate) leaching.
+<div class="whl-card-grid" markdown="1">
+<div class="whl-card" markdown="1">
+**Hydrometric Station — SonTek acoustic Doppler flow meter**
+_RCREC & DeLuca Preserve · 2023–present_
 
-- **Zentra-ZL6 Data Logger.** RCREC, 2024 – present. Records data from
-  TEROS-series and EC-5 sensors; transmits to the ZENTRA Cloud.
+Continuously measures stream and open-channel discharge, velocity, water level,
+flow direction, temperature, and diagnostic quality metrics.
 
-- **Groundwater Well — Rugged Troll sensors.** RCREC (5 wells) and
-  DeLuca Preserve (3 wells), 2023 – present. Continuous logging of
-  groundwater level and temperature.
+</div>
 
-- **Aqua Troll Sonde.** RCREC, 2023 – present. Multi-parameter
-  water-quality sonde: level, temperature, pH, dissolved oxygen,
-  electrical conductivity, turbidity.
+<div class="whl-card" markdown="1">
+**Weather Station**
+_RCREC · 2024–present_
 
-- **VuLink Data Logger.** DeLuca Preserve, 2024 – present. Automated
-  data logging and wireless transmission for groundwater-level sensors.
+Air temperature, humidity, rainfall, wind, and solar radiation, logged for
+real-time remote monitoring.
 
-- **TEROS 12 — Soil Moisture Sensor.** RCREC, 2024 – present.
-  Capacitance-based volumetric water content, temperature, and
-  electrical conductivity.
+</div>
 
-- **TEROS 54 — Soil Moisture Profile Probe.** RCREC, 2024 – present.
-  Multi-depth soil water potential and temperature.
+<div class="whl-card" markdown="1">
+**Lysimeter**
+_RCREC · 2024–present_
 
-- **Onset ECH₂O EC-5 — Soil Moisture Sensor.** RCREC, 2025 – present.
-  Volumetric water content via capacitance-based dielectric measurement.
+Tracks water movement through the soil profile and collects percolated water to
+quantify subsurface drainage and solute (e.g., nitrate) leaching.
 
-### Laboratory equipment (RCREC Hydrology Laboratory)
+</div>
 
-- **Benchtop Multiparameter Meter.** 2026 – present. Measures pH,
-  electrical conductivity, and temperature in water and soil samples.
+<div class="whl-card" markdown="1">
+**Zentra ZL6 Data Logger**
+_RCREC · 2024–present_
 
-- **AQ300 Discrete Analyzer.** 2026 – present. Automated nutrient and
-  chemical analysis (nitrate, ammonia, phosphate) of water, wastewater,
-  and soil samples via robotic sampling and spectrophotometry.
+Records data from TEROS-series and EC-5 sensors and transmits to the ZENTRA
+Cloud.
 
-### Visit, tour, or partner with the lab
+</div>
+
+<div class="whl-card" markdown="1">
+**Groundwater Wells — Rugged TROLL sensors**
+_RCREC (5 wells) & DeLuca Preserve (3 wells) · 2023–present_
+
+Continuous logging of groundwater level and temperature.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**Aqua TROLL Sonde**
+_RCREC · 2023–present_
+
+Multi-parameter water-quality sonde: level, temperature, pH, dissolved oxygen,
+electrical conductivity, and turbidity.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**VuLink Data Logger**
+_DeLuca Preserve · 2024–present_
+
+Automated data logging and wireless transmission for groundwater-level sensors.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**TEROS 12 — Soil-Moisture Sensor**
+_RCREC · 2024–present_
+
+Capacitance-based volumetric water content, temperature, and electrical
+conductivity.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**TEROS 54 — Soil-Moisture Profile Probe**
+_RCREC · 2024–present_
+
+Multi-depth soil water potential and temperature.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**Onset ECH₂O EC-5 — Soil-Moisture Sensor**
+_RCREC · 2025–present_
+
+Volumetric water content via capacitance-based dielectric measurement.
+
+</div>
+</div>
+
+## Laboratory Equipment
+
+<div class="whl-card-grid" markdown="1">
+<div class="whl-card" markdown="1">
+**Benchtop Multiparameter Meter**
+_RCREC Hydrology Lab · 2026–present_
+
+Measures pH, electrical conductivity, and temperature in water and soil samples.
+
+</div>
+
+<div class="whl-card" markdown="1">
+**AQ300 Discrete Analyzer**
+_RCREC Hydrology Lab · 2026–present_
+
+Automated nutrient and chemical analysis (nitrate, ammonia, phosphate) of water,
+wastewater, and soil samples via robotic sampling and spectrophotometry.
+
+</div>
+</div>
+
+## Field Gallery
+
+<div class="whl-callout" markdown="1">
+**Photos and short clips from the field go here.** To add one, open this page in
+the site editor (**Other Pages → Facilities**), click the image button, and
+upload — or drop a caption like `![Weather station at RCREC](/assets/img/uploads/weather-station.jpg)`.
+Videos and extra maps can be embedded the same way (see the comment at the top
+of this page).
+</div>
+
+## Visit, Tour, or Partner With the Lab
 
 <div class="whl-btn-row">
   <a class="whl-btn whl-btn-primary" href="mailto:g.golmohammadi@ufl.edu?subject=Lab%20tour%20%2F%20facilities%20inquiry%20%E2%80%94%20Watershed%20Hydrology%20Lab"><i class="fas fa-envelope"></i> Request a tour or data</a>

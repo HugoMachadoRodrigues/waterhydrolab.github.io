@@ -120,8 +120,8 @@ When you write, include:
 
 <div class="whl-btn-row">
   <a class="whl-btn whl-btn-primary" href="mailto:g.golmohammadi@ufl.edu?subject=Prospective%20student%20inquiry%20%E2%80%94%20Watershed%20Hydrology%20Lab"><i class="fas fa-paper-plane"></i> Email a prospective-student inquiry</a>
-  <a class="whl-btn" href="https://soils.ifas.ufl.edu/academics/graduate/" target="_blank" rel="noopener"><i class="fas fa-user-graduate"></i> SWES graduate admissions</a>
-  <a class="whl-btn" href="https://abe.ufl.edu/academics/graduate/" target="_blank" rel="noopener"><i class="fas fa-user-graduate"></i> ABE graduate admissions</a>
+  <a class="whl-btn" href="https://soils.ifas.ufl.edu/academics/" target="_blank" rel="noopener"><i class="fas fa-user-graduate"></i> SWES graduate admissions</a>
+  <a class="whl-btn" href="https://abe.ufl.edu/graduate/" target="_blank" rel="noopener"><i class="fas fa-user-graduate"></i> ABE graduate admissions</a>
 </div>
 
 ### Postdoc & collaborator inquiries
