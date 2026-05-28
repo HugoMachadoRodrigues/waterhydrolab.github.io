@@ -101,11 +101,11 @@ html::after {
   -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 80%);
 }
 
-/* Heading family — Fraunces serif for hierarchy. */
+/* Heading family — Fraunces serif for hierarchy, bold weight. */
 h1, h2, h3, h4, h5, h6,
 .al-h1, .al-h2, .al-h3 {
   font-family: var(--font-serif);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -227,3 +227,163 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .whl-callout p:last-child { margin-bottom: 0; }
+
+/* =============================================================================
+   EDITORIAL REFINEMENT LAYER
+   A calmer, more spacious, journal-like rhythm on top of al-folio. Goals:
+   generous whitespace, stronger hierarchy, Title-Case + bold headings, and
+   quiet scientific accents (thin gradient rules under section headers).
+   ============================================================================= */
+
+/* ---- Let content breathe: rhythm for body copy ---- */
+.post {
+  line-height: 1.7;
+}
+
+.post p {
+  margin-bottom: 1.2rem;
+}
+
+/* Subtitle / lede under the page title */
+.post-header .desc,
+.post .desc {
+  margin-top: 0.65rem;
+  line-height: 1.6;
+  color: var(--whl-muted);
+}
+
+/* A little more air at the top of the main column */
+.container[role="main"] {
+  padding-top: 1.75rem;
+}
+
+/* ---- Page H1: bold, Title Case, larger and tighter ---- */
+.post-title,
+.post .post-title {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: clamp(2rem, 1.35rem + 2.5vw, 2.8rem);
+  line-height: 1.12;
+  margin-bottom: 0.45rem;
+}
+
+/* ---- Section headers (H2): bold, Title Case, generous space, quiet rule.
+   text-transform:capitalize only upper-cases first letters, so acronyms
+   like AI, SWAT+, BMP, MODFLOW are preserved. ---- */
+.post h2 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--whl-line);
+  position: relative;
+}
+
+.post h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3.25rem;
+  height: 2px;
+  background: var(--whl-gradient);
+  border-radius: 2px;
+}
+
+.post h2 a {
+  color: inherit;
+}
+
+/* ---- H3: bold, Title Case, more space above ---- */
+.post h3 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 2.2rem;
+  margin-bottom: 0.85rem;
+}
+
+/* ---- Navbar: Title-Case tabs, refined tracking, more breathing room ---- */
+#navbar .navbar-nav .nav-item .nav-link {
+  font-family: var(--font-sans);
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding-left: 0.95rem;
+  padding-right: 0.95rem;
+}
+
+/* ---- Cards & button rows: more padding and air ---- */
+.whl-btn-row {
+  gap: 0.7rem;
+  margin: 1.85rem 0;
+}
+
+.whl-card {
+  padding: 1.6rem 1.75rem;
+  transition: transform 0.18s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.whl-card:hover {
+  transform: translateY(-3px);
+  border-color: rgb(34 211 238 / 35%);
+  box-shadow: 0 24px 64px -24px rgb(0 0 0 / 55%);
+}
+
+.whl-card-grid {
+  gap: 1.6rem;
+  margin: 2.1rem 0;
+}
+
+.whl-callout {
+  padding: 1.35rem 1.55rem;
+  margin: 1.9rem 0;
+}
+
+/* ---- al-folio's own project cards: match the spacing/hover language ---- */
+.projects .grid-item,
+.projects .card {
+  margin-bottom: 0.5rem;
+}
+
+.card.hoverable:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 64px -24px rgb(0 0 0 / 55%);
+}
+
+/* ---- Profile photo: refined frame on about / people ---- */
+.profile img {
+  border-radius: 0.9rem;
+  box-shadow: var(--whl-shadow);
+}
+
+/* ---- Quiet horizontal rule for section breaks ---- */
+.post hr,
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--whl-line);
+  margin: 2.75rem 0;
+}
+
+/* ---- Publications & news blocks on the homepage: a bit more separation ---- */
+.publications,
+.news {
+  margin-top: 1rem;
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 1.4rem;
+}
+
+/* ---- Lists in content: looser, easier to scan ---- */
+.post ul li,
+.post ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Footer: lighter, more spaced, less utilitarian ---- */
+footer.fixed-bottom .container,
+footer .container {
+  letter-spacing: 0.01em;
+}
