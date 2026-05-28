@@ -9,7 +9,7 @@
 layout: page
 title: Hydrologic & Water Quality Modeling
 description: Process-based modeling of flow, storage, and nutrient dynamics at field and watershed scales.
-img: assets/img/research_placeholder_hydrology.svg
+img: assets/img/research_hydrology.jpeg
 importance: 1
 category: research
 ---

@@ -5,7 +5,7 @@
 layout: page
 title: AI-Driven Environmental Risk Mapping & Resilience
 description: Geospatial machine-learning frameworks for flood, drought, and groundwater risk, with explainable AI.
-img: assets/img/research_placeholder_ai.svg
+img: assets/img/research_ai.jpeg
 importance: 2
 category: research
 ---

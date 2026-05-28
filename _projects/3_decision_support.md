@@ -6,7 +6,7 @@
 layout: page
 title: Data-Driven Modeling & Decision Support
 description: Models, tools, and stakeholder engagement to support sustainable management of agricultural landscapes.
-img: assets/img/research_placeholder_dss.svg
+img: assets/img/research_decision_support.jpeg
 importance: 3
 category: research
 ---
