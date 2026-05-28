@@ -687,4 +687,32 @@ footer .container {
   border: 0;
 }
 
+/* Field-gallery videos — 2-up grid, looping silently, theme-framed */
+.whl-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+  margin: 1.6rem 0 2rem;
+}
+.whl-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+  border: 1px solid var(--whl-line-strong);
+  border-radius: 1rem;
+  box-shadow: var(--whl-shadow);
+}
+
+/* Title-case all page titles and section headings, so they match the
+   uppercase nav and never read as lowercase ("facilities" -> "Facilities").
+   `capitalize` only upper-cases the first letter of each word, so acronyms
+   like AI, SWAT+, BMP, MODFLOW are preserved as-is. */
+.post-title,
+.post h1,
+.post h2,
+.post h3 {
+  text-transform: capitalize;
+}
+
 /* Selected-publications + news headings on the homepage already use .post h2 */

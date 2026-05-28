@@ -153,12 +153,19 @@ wastewater, and soil samples via robotic sampling and spectrophotometry.
 
 ## Field Gallery
 
+<div class="whl-video-grid">
+  <video class="whl-video" autoplay loop muted playsinline preload="metadata" aria-label="Field site footage">
+    <source src="/assets/video/video_1.mp4" type="video/mp4" />
+  </video>
+  <video class="whl-video" autoplay loop muted playsinline preload="metadata" aria-label="Field site footage">
+    <source src="/assets/video/video_2.mp4" type="video/mp4" />
+  </video>
+</div>
+
 <div class="whl-callout" markdown="1">
-**Photos and short clips from the field go here.** To add one, open this page in
-the site editor (**Other Pages → Facilities**), click the image button, and
-upload — or drop a caption like `![Weather station at RCREC](/assets/img/uploads/weather-station.jpg)`.
-Videos and extra maps can be embedded the same way (see the comment at the top
-of this page).
+**Add more photos or clips** in the site editor (**Other Pages → Facilities**):
+click the image button to upload a photo, or paste a `<video>` / `<iframe>` embed.
+Looping clips use `<video autoplay loop muted playsinline>`.
 </div>
 
 ## Visit, Tour, or Partner With the Lab
