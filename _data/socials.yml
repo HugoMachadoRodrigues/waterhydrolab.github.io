@@ -43,14 +43,13 @@ github_username: waterhydrolab         # GitHub organisation that owns this repo
 # facebook_id:                         # add if the lab confirms an FB page
 # youtube_id:                          # add if the lab confirms a YouTube channel
 
-# ----- Optional university profile (custom entry — al-folio supports any
-#       link by giving it a custom logo + URL) -----
-# jekyll-socials handles unknown keys via `social[1]['logo']` so the value
-# MUST be a hash with at least a `logo` field — not a list.
-custom_social:
-  logo: https://soils.ifas.ufl.edu/media/soilsifasufledu/sws-main-site/images/UF_IFAS_horizontal.svg
-  title: UF/IFAS faculty page
-  url: https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/
+# ----- Optional university profile -----
+# REMOVED: the custom_social UF/IFAS entry used an external SVG
+# (soils.ifas.ufl.edu/.../UF_IFAS_horizontal.svg) that does not render via
+# jekyll-socials' inline <svg><image xlink:href> output — it showed as a
+# broken-image icon in the social row. The UF/IFAS faculty link still lives
+# on the contact page and PI bio, so nothing is lost. Re-add only with a
+# LOCAL raster/SVG logo placed in /assets/img/ if a UF icon is wanted here.
 
 # ----- RSS icon for the news feed -----
 rss_icon: true

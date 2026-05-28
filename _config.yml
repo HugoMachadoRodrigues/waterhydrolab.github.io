@@ -156,7 +156,10 @@ al_folio:
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+# Sticky (not fixed). With fixed-top the navbar floated over the page and
+# covered the top of each page's heading; sticky keeps the bar in normal
+# flow (no overlap) while still pinning to the top on scroll.
+navbar_fixed: false
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
