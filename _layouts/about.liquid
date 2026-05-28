@@ -1,0 +1,121 @@
+---
+layout: default
+---
+
+{% comment %}
+=============================================================================
+  ABOUT / HOME LAYOUT — local override of al_folio_core's about.liquid
+=============================================================================
+  This adds an impactful landing "hero" (logo + lab name + tagline + primary
+  CTAs + research pillars) above the standard about content. The hero only
+  renders when the page defines a `hero:` block in its front matter (i.e. the
+  homepage), so any other page using `layout: about` falls back to the plain
+  header.
+
+  Everything below the hero (profile card, page content, news, selected
+  publications, social icons) mirrors the upstream al-folio about layout so
+  no functionality is lost. Theme includes (figure.liquid, news.liquid,
+  selected_papers.liquid) and the {% social_links %} tag still come from the
+  al_folio_core gem.
+=============================================================================
+{% endcomment %}
+
+<div class="post">
+
+  {% if page.hero %}
+    <!-- ===================== HERO ===================== -->
+    <section class="whl-hero">
+      <div class="whl-hero-inner">
+        {% if page.hero.logo %}
+          <img
+            class="whl-hero-logo"
+            src="{{ page.hero.logo | relative_url }}"
+            alt="{{ site.title }} logo"
+            loading="eager"
+          />
+        {% endif %}
+
+        <h1 class="whl-hero-title">
+          {{ site.first_name }} <span class="whl-gradient-text">{{ site.middle_name }}</span> {{ site.last_name }}
+        </h1>
+
+        {% if page.hero.tagline %}
+          <p class="whl-hero-tagline">{{ page.hero.tagline }}</p>
+        {% endif %}
+
+        {% if page.subtitle %}
+          <p class="whl-hero-meta">{{ page.subtitle }}</p>
+        {% endif %}
+
+        <div class="whl-btn-row whl-btn-row-center whl-hero-cta">
+          <a class="whl-btn whl-btn-primary" href="{{ '/projects/' | relative_url }}"><i class="fas fa-flask"></i> Explore Our Research</a>
+          <a class="whl-btn" href="{{ '/people/' | relative_url }}"><i class="fas fa-users"></i> Meet the Team</a>
+          <a class="whl-btn" href="{{ '/publications/' | relative_url }}"><i class="fas fa-book"></i> Publications</a>
+          <a class="whl-btn" href="{{ '/contact/' | relative_url }}"><i class="fas fa-paper-plane"></i> Contact</a>
+        </div>
+      </div>
+
+      {% if page.hero.pillars %}
+        <div class="whl-pillars">
+          {% for pillar in page.hero.pillars %}
+            <a class="whl-pillar" href="{{ pillar.href | relative_url }}">
+              <h3>{{ pillar.title }}</h3>
+              <p>{{ pillar.text }}</p>
+              <span class="whl-pillar-more">Learn more <i class="fas fa-arrow-right"></i></span>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </section>
+  {% else %}
+    <header class="post-header">
+      <h1 class="post-title">{{ site.title }}</h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </header>
+  {% endif %}
+
+  <article>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          {% endif %}
+          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=page.profile.image cache_bust=true %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+  </article>
+</div>

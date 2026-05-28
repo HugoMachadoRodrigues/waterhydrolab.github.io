@@ -61,10 +61,12 @@ description: > # the ">" symbol means: ignore newlines until the next top-level 
   through hydrologic modeling, AI-driven environmental risk mapping, and
   data-driven decision support for sustainable agricultural systems.
 
-# Footer text. The al-folio MIT license obligation is satisfied by the
-# LICENSE file kept in the repo, so no visible theme credit is required.
+# Footer text. al-folio already prints "© Copyright <year> <site.title>."
+# above this line, so we don't repeat the lab name here — just the affiliations.
+# The al-folio MIT license obligation is satisfied by the LICENSE file in the
+# repo, so no visible theme credit is required.
 footer_text: >
-  Watershed Hydrology Lab · UF/IFAS Range Cattle Research and Education Center · University of Florida
+  UF/IFAS Range Cattle Research and Education Center · University of Florida
 
 # Keywords help search engines categorize the site.
 keywords: watershed hydrology, water quality modeling, SWAT, DRAINMOD, BMPs, machine learning in hydrology, Florida hydrology, University of Florida, IFAS, RCREC, soil water ecosystem sciences, Golmar Golmohammadi

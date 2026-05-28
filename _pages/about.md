@@ -25,6 +25,28 @@ subtitle: >
   <a href="https://rcrec-ona.ifas.ufl.edu/">UF/IFAS Range Cattle Research and Education Center</a> ·
   <a href="https://soils.ifas.ufl.edu/">Department of Soil, Water, and Ecosystem Sciences</a>
 
+# ----- Landing hero -----
+# Rendered by _layouts/about.liquid as an impactful banner at the top of the
+# homepage: lab logo, name, tagline, primary buttons, and three research
+# "pillars". Edit the tagline/pillars here; the layout handles the styling.
+hero:
+  logo: assets/img/whl_logo.png
+  tagline: >
+    Advancing the science of water across agricultural landscapes, rangelands,
+    and watersheds — uniting physically based modeling, artificial intelligence,
+    and a dense field-observation network to safeguard water quantity and
+    quality under a changing climate.
+  pillars:
+    - title: Hydrologic &amp; Water-Quality Modeling
+      text: Field-to-watershed simulation of flow, storage, and nutrient transport with SWAT+, MODFLOW, and DRAINMOD.
+      href: /projects/1_hydrologic_modeling/
+    - title: AI-Driven Environmental Risk Mapping
+      text: Geospatial machine learning for flood, drought, and groundwater vulnerability, with explainable AI.
+      href: /projects/2_ai_risk_mapping/
+    - title: Data-Driven Decision Support
+      text: Models, sensor networks, and stakeholder input to evaluate Best Management Practices for sustainable agriculture.
+      href: /projects/3_decision_support/
+
 # ----- Profile picture & contact card on the right side of the homepage -----
 profile:
   align: right
@@ -59,6 +81,8 @@ latest_posts:
   limit: 3
 ---
 
+## About the Lab
+
 The **Watershed Hydrology Lab** at the [University of Florida](https://www.ufl.edu/) /
 IFAS [Range Cattle Research and Education Center (RCREC)](https://rcrec-ona.ifas.ufl.edu/)
 investigates how water moves, is stored, and carries nutrients across
@@ -68,67 +92,9 @@ our integrated research and Extension program develops sustainable water
 management practices that conserve water and protect water quality under
 changing climate and land-use conditions.
 
-<div class="whl-btn-row">
-  <a class="whl-btn whl-btn-primary" href="/projects/"><i class="fas fa-flask"></i> Explore our research</a>
-  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> Meet the team</a>
-  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> Read publications</a>
-  <a class="whl-btn" href="/contact/"><i class="fas fa-paper-plane"></i> Contact / Join the lab</a>
-</div>
-
-We combine physically-based hydrologic and water-quality models (SWAT+,
+We combine physically based hydrologic and water-quality models (SWAT+,
 MODFLOW, DRAINMOD), machine-learning and deep-learning approaches,
 geospatial analysis with Earth-observation data, and an extensive
-field-instrumentation network at RCREC and the DeLuca Preserve. The lab
-operates at the intersection of watershed science, AI, and agricultural
-sustainability.
-
-### Research themes
-
-<div class="whl-card-grid" markdown="1">
-<div class="whl-card" markdown="1">
-**Hydrologic & water-quality modeling**
-Field-to-watershed simulation of flow, storage, and nutrient transport
-with SWAT+, MODFLOW, and DRAINMOD.
-
-<a class="whl-btn whl-btn-ghost" href="/projects/1_hydrologic_modeling/"><i class="fas fa-arrow-right"></i> Learn more</a>
-</div>
-
-<div class="whl-card" markdown="1">
-**AI-driven environmental risk mapping**
-Geospatial machine learning for flood, drought, and groundwater
-vulnerability, with explainable AI.
-
-<a class="whl-btn whl-btn-ghost" href="/projects/2_ai_risk_mapping/"><i class="fas fa-arrow-right"></i> Learn more</a>
-</div>
-
-<div class="whl-card" markdown="1">
-**Data-driven decision support**
-Integrating models, sensor networks, and stakeholder input to evaluate
-Best Management Practices (BMPs) for sustainable agriculture.
-
-<a class="whl-btn whl-btn-ghost" href="/projects/3_decision_support/"><i class="fas fa-arrow-right"></i> Learn more</a>
-</div>
-</div>
-
-### Explore the lab
-
-<div class="whl-btn-row">
-  <a class="whl-btn" href="/projects/"><i class="fas fa-flask"></i> Research themes</a>
-  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> People</a>
-  <a class="whl-btn" href="/publications/"><i class="fas fa-book"></i> Publications</a>
-  <a class="whl-btn" href="/facilities/"><i class="fas fa-microscope"></i> Facilities</a>
-  <a class="whl-btn" href="/news/"><i class="fas fa-bullhorn"></i> News</a>
-  <a class="whl-btn whl-btn-primary" href="/contact/"><i class="fas fa-paper-plane"></i> Contact</a>
-</div>
-
-### Follow our work
-
-<div class="whl-btn-row">
-  <a class="whl-btn" href="https://x.com/WaterHydroLab" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> @WaterHydroLab</a>
-  <a class="whl-btn" href="https://github.com/waterhydrolab" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-  <a class="whl-btn" href="https://www.linkedin.com/in/golmar-golmohammadi-35791a17/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-  <a class="whl-btn" href="https://orcid.org/0000-0001-5532-3892" target="_blank" rel="noopener"><i class="fab fa-orcid"></i> ORCID</a>
-  <a class="whl-btn" href="https://scholar.google.com/citations?user=cpXxmlYAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a class="whl-btn" href="https://www.researchgate.net/profile/Golmar-Golmohammadi" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i> ResearchGate</a>
-  <a class="whl-btn whl-btn-ghost" href="/feed.xml"><i class="fas fa-rss"></i> RSS</a>
-</div>
+field-instrumentation network at RCREC and the DeLuca Preserve — working at
+the intersection of **watershed science, artificial intelligence, and
+agricultural sustainability**.
