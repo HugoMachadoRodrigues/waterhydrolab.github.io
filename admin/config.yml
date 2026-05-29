@@ -451,3 +451,24 @@ collections:
               - { name: icon, label: "Icon (FontAwesome class, optional)", widget: string, required: false }
               - { name: style, label: "Style: primary, ghost, or blank", widget: string, required: false }
           - { name: body, label: "Page body (keep the search & bibliography lines as-is)", widget: markdown }
+
+  # ---------------------------------------------------------------------------
+  #  DOWNLOADS — QR codes & share cards the team can grab anytime.
+  #  Click a file to preview it, then use the download button in the asset
+  #  viewer. You can also replace any file with a freshly generated version.
+  # ---------------------------------------------------------------------------
+  - name: downloads
+    label: "Downloads & QR codes"
+    description: "Brand assets you can download anytime. Open this entry, click a thumbnail to preview it full-size, then use the download button. Every QR points to watershedhydrologylab.com."
+    files:
+      - name: assets
+        label: "QR codes & share cards"
+        file: "_data/downloads.yml"
+        fields:
+          - { name: qr_primary, label: "QR — gradient + logo (everyday use)", widget: image, required: false, hint: "The default QR: red→petrol gradient with the lab logo in the middle. Great for slides, flyers and email." }
+          - { name: qr_dark, label: "QR — solid dark + logo", widget: image, required: false, hint: "Single-colour dark QR with logo. Best on light paper or anywhere you need one ink colour." }
+          - { name: qr_hires, label: "QR — high-resolution (300 dpi)", widget: image, required: false, hint: "Same gradient QR at print resolution. Use when printing larger than a business card." }
+          - { name: qr_pdf, label: "QR — print PDF (posters)", widget: file, required: false, hint: "Vector-quality PDF. Hand this to a print shop for posters or banners." }
+          - { name: card_landscape, label: "Card — landscape", widget: image, required: false, hint: "Wide card with the QR + lab name. Drop into a slide or an email signature." }
+          - { name: card_badge, label: "Card — badge / name-tag", widget: image, required: false, hint: "Portrait card sized for a conference badge or name-tag." }
+          - { name: card_story, label: "Card — Instagram Story (1080×1920)", widget: image, required: false, hint: "Ready to post as an Instagram or WhatsApp Story." }

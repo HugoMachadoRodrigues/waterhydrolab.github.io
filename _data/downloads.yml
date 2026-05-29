@@ -1,0 +1,18 @@
+# =============================================================================
+#  Downloadable brand assets (QR codes & share cards) for the lab.
+#
+#  These are managed from Sveltia CMS  →  "Downloads & QR codes".
+#  Open that entry to preview and download each file, or to replace one with a
+#  freshly generated version. All of them point to https://watershedhydrologylab.com
+# =============================================================================
+
+# Plain QR codes ------------------------------------------------------------
+qr_primary: /assets/img/qr/qr-watershedhydrologylab.png        # gradient + logo (everyday use)
+qr_dark: /assets/img/qr/qr-watershedhydrologylab-dark.png      # solid dark + logo (mono / dark backgrounds)
+qr_hires: /assets/img/qr/qr-watershedhydrologylab-hires.png    # 300 dpi PNG for large print
+qr_pdf: /assets/img/qr/qr-watershedhydrologylab.pdf            # vector-quality PDF for posters
+
+# Ready-to-share cards ------------------------------------------------------
+card_landscape: /assets/img/qr/qr-card.png                     # landscape card (slides, email)
+card_badge: /assets/img/qr/qr-card-badge.png                   # portrait badge / name-tag size
+card_story: /assets/img/qr/qr-card-story.png                   # 1080×1920 Instagram Story
