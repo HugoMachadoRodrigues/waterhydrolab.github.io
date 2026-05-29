@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{%- comment -%}
+  Local override of al_folio_core's page.liquid.
+  Adds an optional cover-image HERO: any page that defines `img` in its front
+  matter (currently the research-project pages) renders its cover image as a
+  banner with the title + description elegantly overlaid. Pages without `img`
+  (Facilities, Contact, News, Publications, the Projects index, 404) fall back
+  to the standard plain header — so their look is unchanged.
+{%- endcomment -%}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  {% if page.img %}
+    <header
+      class="post-header whl-page-hero"
+      style="--whl-hero-img: url('{{ page.img | relative_url }}');"
+    >
+      <div class="whl-page-hero-inner">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-description">{{ page.description }}</p>
+      </div>
+    </header>
+  {% else %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-description">{{ page.description }}</p>
+    </header>
+  {% endif %}
+
+  <article>
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.plugins contains 'al_comments' %}
+    {% include plugins/al_comments.liquid %}
+  {% endif %}
+</div>

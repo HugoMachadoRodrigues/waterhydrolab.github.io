@@ -57,6 +57,10 @@ UF/IFAS Range Cattle Research and Education Center (RCREC)
 
 <div class="whl-card-grid" markdown="1">
 <div class="whl-card" markdown="1">
+<div class="whl-card-media cover">
+  <img src="/assets/img/rcrec-building.jpg" alt="RCREC main building — Range Cattle Research and Education Center, Ona, FL" loading="lazy" />
+</div>
+
 **RCREC main building**
 3401 Experiment Station
 Ona, FL 33865
@@ -68,6 +72,12 @@ Ona, FL 33865
 </div>
 
 <div class="whl-card" markdown="1">
+<div class="whl-card-media affil">
+  <img src="/assets/img/affiliations/swes.jpg" alt="UF Soil, Water, and Ecosystem Sciences — field research" loading="lazy" />
+  <img src="/assets/img/affiliations/abe-frazier-rogers.jpg" alt="UF Agricultural and Biological Engineering — Frazier Rogers Hall" loading="lazy" />
+  <img class="logo" src="/assets/img/affiliations/water-institute.png" alt="UF Water Institute" loading="lazy" />
+</div>
+
 **Affiliated units**
 Department of Soil, Water, and Ecosystem Sciences
 Department of Agricultural and Biological Engineering
