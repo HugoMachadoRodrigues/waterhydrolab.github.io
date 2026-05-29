@@ -43,7 +43,7 @@ collections:
           - { name: layout, widget: hidden, default: about }
           - { name: title, widget: hidden, default: about }
           - { name: permalink, widget: hidden, default: "/" }
-          - { name: subtitle, label: "Subtitle (HTML, under the lab name)", widget: text }
+          - { name: subtitle, label: "Hero subtitle — the line under the lab name (use the link button to add links)", widget: markdown }
           - name: hero
             label: "Hero (landing banner)"
             widget: object

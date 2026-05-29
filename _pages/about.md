@@ -17,13 +17,14 @@ layout: about # use the "about" layout — do not change
 title: about # the navbar label
 permalink: / # this page lives at the site root
 
-# Subtitle appears in smaller text under the lab name on the homepage.
-# We highlight Dr. Golmohammadi and her UF/IFAS affiliations as links.
+# Hero subtitle — the smaller line under the lab name on the homepage.
+# Edit it in the CMS (Home -> "Hero subtitle"); use the link button to add
+# links — no HTML needed. Written in Markdown ([text](https://link)).
 subtitle: >
-  Led by <a href="https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/">Dr. Golmar Golmohammadi</a>,
+  Led by [Dr. Golmar Golmohammadi](https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/),
   Assistant Professor of Watershed Hydrology and Biogeochemistry ·
-  <a href="https://rcrec-ona.ifas.ufl.edu/">UF/IFAS Range Cattle Research and Education Center</a> ·
-  <a href="https://soils.ifas.ufl.edu/">Department of Soil, Water, and Ecosystem Sciences</a>
+  [UF/IFAS Range Cattle Research and Education Center](https://rcrec-ona.ifas.ufl.edu/) ·
+  [Department of Soil, Water, and Ecosystem Sciences](https://soils.ifas.ufl.edu/)
 
 # ----- Landing hero -----
 # Rendered by _layouts/about.liquid as an impactful banner at the top of the
