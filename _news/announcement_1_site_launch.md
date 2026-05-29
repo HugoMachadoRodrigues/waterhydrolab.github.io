@@ -5,7 +5,7 @@ layout: post
 date: 2026-05-27 12:00:00-0400
 inline: true
 related_posts: false
-title: New lab website is live
+headline: New lab website is live
 image: assets/img/rcrec-building.jpg
 ---
 
