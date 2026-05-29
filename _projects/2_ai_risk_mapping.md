@@ -8,6 +8,7 @@ description: Geospatial machine-learning frameworks for flood, drought, and grou
 img: assets/img/research_ai.jpeg
 importance: 2
 category: research
+related_publications: true
 
 # ----- Buttons at the foot of the page (edited in the CMS, no HTML) -----
 buttons:
@@ -46,14 +47,6 @@ in water-resources management, land-use planning, climate adaptation,
 and disaster resilience — particularly in vulnerable regions of
 Florida.
 
-### Representative recent publications
-
-- _Artificial Intelligence in Hydrology: Advancements in Soil, Water
-  Resource Management, and Sustainable Development_ — Sustainability (2025).
-- _Flood risk projection in Iran using CMIP6 models and frequency
-  analysis of precipitation_ — Stochastic Environmental Research and Risk
-  Assessment (2024).
-- _Projections of meteorological drought severity-duration variations
-  based on CMIP6_ — Scientific Reports (2024).
+**Representative related publications** behind this theme: {% cite golmohammadi2025ai_hydrology behzadi2024flood_iran behzadi2024drought_cmip6 %} — full details (thumbnail, DOI, link, and citation) are listed below, and the [publications page](/publications/) has the complete list.
 
 {% include whl_buttons.liquid items=page.buttons %}

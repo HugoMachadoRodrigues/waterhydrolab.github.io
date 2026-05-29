@@ -9,6 +9,7 @@ description: Models, tools, and stakeholder engagement to support sustainable ma
 img: assets/img/research_decision_support.jpeg
 importance: 3
 category: research
+related_publications: true
 
 # ----- Buttons at the foot of the page (edited in the CMS, no HTML) -----
 buttons:
@@ -45,5 +46,9 @@ We work directly with **ranchers, Extension agents, and stakeholders**
 to make sure the tools support practical decision-making in real-world
 operations. Our Extension appointment is a 40% component of Dr.
 Golmohammadi's position.
+
+### Selected related publications
+
+**Representative related publications** behind this theme: {% cite golmohammadi2025ai_hydrology golmohammadi2020drainmod maghsoudi2023aquifer_pso %} — full details (thumbnail, DOI, link, and citation) are listed below, and the [publications page](/publications/) has the complete list.
 
 {% include whl_buttons.liquid items=page.buttons %}

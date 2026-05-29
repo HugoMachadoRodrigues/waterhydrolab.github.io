@@ -12,6 +12,7 @@ description: Process-based modeling of flow, storage, and nutrient dynamics at f
 img: assets/img/research_hydrology.jpeg
 importance: 1
 category: research
+related_publications: true
 
 # ----- Buttons at the foot of the page (edited in the CMS, no HTML) -----
 buttons:
@@ -48,17 +49,6 @@ These models support:
 - Custom Python pipelines for data harmonization, calibration, and
   uncertainty analysis.
 
-### Representative recent publications
-
-See the [publications page](/publications/) for the full list. Notable
-related works:
-
-- _Compilation simulation of surface water and groundwater resources using
-  the SWAT-MODFLOW model for a karstic basin in Iran_ — Hydrogeology
-  Journal (2023).
-- _Assessment of Impacts of Climate Change on Tile Discharge and Nitrogen
-  Yield Using the DRAINMOD Model_ — Hydrology (2020).
-- _Designing a deep learning-based framework for the prediction of lake
-  surface closed curves_ — Earth Science Informatics (2025).
+**Representative related publications** behind this theme: {% cite salmani2023swat_modflow golmohammadi2020drainmod santos2025lake_surface %} — full details (thumbnail, DOI, link, and citation) are listed below, and the [publications page](/publications/) has the complete list.
 
 {% include whl_buttons.liquid items=page.buttons %}
