@@ -459,7 +459,7 @@ collections:
   # ---------------------------------------------------------------------------
   - name: downloads
     label: "Downloads & QR codes"
-    description: "Brand assets you can download anytime. Open this entry, click a thumbnail to preview it full-size, then use the download button. Every QR points to watershedhydrologylab.com."
+    description: "Your lab's QR codes & share cards. To DOWNLOAD any of them, open the downloads page — watershedhydrologylab.com/downloads/ — where every file has its own Download button. The boxes below are for REPLACING a file with a newly generated version; a replacement updates the downloads page automatically."
     files:
       - name: assets
         label: "QR codes & share cards"

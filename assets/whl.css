@@ -1075,3 +1075,41 @@ img.whl-video {
 }
 
 /* Selected-publications + news headings on the homepage already use .post h2 */
+
+/* -----------------------------------------------------------------------------
+   DOWNLOADS / QR-CODE PAGE  (/downloads/)
+   Reuses .whl-card + .whl-card-grid; only the media tile is bespoke so QR
+   codes always sit on a white background (scannable + crisp in both themes).
+   ----------------------------------------------------------------------------- */
+.whl-dl-intro {
+  max-width: 62ch;
+  opacity: 0.85;
+}
+.whl-dl-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  margin: -1.6rem -1.75rem 1.2rem; /* bleed across the card padding */
+  padding: 1.1rem;
+  background: var(--whl-gradient-soft);
+  border-bottom: 1px solid var(--whl-line);
+  border-radius: 0.9rem 0.9rem 0 0; /* match the card's top corners */
+}
+.whl-dl-media img {
+  display: block;
+  max-width: 100%;
+  max-height: 200px;
+  margin: 0;
+  background: #fff; /* keep QR on white regardless of theme */
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 22px -10px rgb(0 0 0 / 45%);
+}
+.whl-dl-doc .fa-file-pdf {
+  font-size: 4.6rem;
+  color: var(--whl-rust);
+}
+/* tighten the action row when it sits inside a card */
+.whl-card .whl-btn-row {
+  margin: 0.5rem 0 0;
+}
