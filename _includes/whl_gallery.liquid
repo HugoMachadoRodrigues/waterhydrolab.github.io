@@ -1,0 +1,37 @@
+{%- comment -%}
+  whl_gallery.liquid — the Field Gallery on the Facilities page, built from
+  page.gallery. Each item is one of:
+    { file: <video or image> , caption? }   -> auto-detected by extension
+    { embed: <YouTube/Vimeo iframe code> , caption? }
+  Videos loop silently with controls (sound is opt-in); images are framed to
+  match; embeds render in a 16:9 box. Edited in the CMS, no HTML needed.
+{%- endcomment -%}
+{%- assign vids = 'mp4,m4v,webm,ogg,ogv,mov' | split: ',' -%}
+{%- if page.gallery and page.gallery.size > 0 -%}
+  <div class="whl-video-grid">
+    {%- for item in page.gallery -%}
+      {%- if item.embed and item.embed != '' -%}
+        <div class="whl-embed">{{ item.embed }}</div>
+      {%- elsif item.file and item.file != '' -%}
+        {%- assign ext = item.file | split: '.' | last | downcase -%}
+        {%- if vids contains ext -%}
+          <video
+            class="whl-video"
+            autoplay
+            loop
+            muted
+            playsinline
+            controls
+            controlslist="nodownload"
+            preload="metadata"
+            aria-label="{{ item.caption | default: 'Field site footage' | escape }}"
+          >
+            <source src="{{ item.file | relative_url }}">
+          </video>
+        {%- else -%}
+          <img class="whl-video" src="{{ item.file | relative_url }}" alt="{{ item.caption | default: 'Field site photo' | escape }}" loading="lazy">
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}

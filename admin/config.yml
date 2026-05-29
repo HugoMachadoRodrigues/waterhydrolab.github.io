@@ -199,7 +199,18 @@ collections:
                 widget: list
                 required: false
                 field: { label: "Image", name: image, widget: image }
-          - { name: body, label: "Page content (intro, map, Field Gallery, buttons)", widget: markdown }
+          - name: gallery
+            label: "Field Gallery (photos & videos)"
+            label_singular: "Gallery item"
+            widget: list
+            collapsed: true
+            required: false
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: file, label: "Photo or video file", widget: file, required: false }
+              - { name: caption, label: "Caption (optional)", widget: string, required: false }
+              - { name: embed, label: "…or paste a YouTube/Vimeo embed (instead of a file)", widget: text, required: false }
+          - { name: body, label: "Page content (intro, map, buttons)", widget: markdown }
       - name: contact
         label: "Contact page"
         file: "_pages/contact.md"

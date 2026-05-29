@@ -7,13 +7,14 @@
 #  gallery.
 #
 #  EDITING IN THE CMS (Other Pages -> Facilities):
-#    - "Instruments" and "Lab equipment" are STRUCTURED lists. Each item has a
-#      Name, a Meta line (site · years), a Description, and one or more Photos
-#      (click-to-upload). Add / remove / reorder items and swap photos there —
-#      no HTML needed. One photo = full-width; two or more = a thumbnail grid.
-#    - The intro text, the map, the Field Gallery videos, and the buttons live
-#      in "Page content" below. For a map/video, paste an <iframe>/<video>
-#      embed; for a photo there, use the image button.
+#    - "Instruments", "Lab equipment", and "Field Gallery" are STRUCTURED.
+#      Each instrument/equipment item has a Name, a Meta line (site · years), a
+#      Description, and one or more Photos (click-to-upload). The Field Gallery
+#      is a list where each item is a photo OR a video (click-to-upload), or a
+#      pasted YouTube/Vimeo embed. Add / remove / reorder items there — no HTML.
+#      One photo = full-width; two or more = a thumbnail grid.
+#    - Only the intro text, the map, and the buttons live in "Page content"
+#      below. For the map, paste a Google Maps <iframe>.
 # =============================================================================
 layout: page
 permalink: /facilities/
@@ -95,6 +96,11 @@ lab_equipment:
       - assets/img/instruments/aq300.jpg
       - assets/img/instruments/aq300-2.jpg
       - assets/img/instruments/aq300-3.jpg
+
+# ----- Field Gallery (videos / photos / embeds; edited in the CMS) -----
+gallery:
+  - file: /assets/video/video_1.mp4
+  - file: /assets/video/video_2.mp4
 ---
 
 A comprehensive suite of field instruments is deployed across research sites at
@@ -128,14 +134,7 @@ forage samples.
 
 ## Field Gallery
 
-<div class="whl-video-grid">
-  <video class="whl-video" autoplay loop muted playsinline controls controlslist="nodownload" preload="metadata" aria-label="Field site footage">
-    <source src="/assets/video/video_1.mp4" type="video/mp4" />
-  </video>
-  <video class="whl-video" autoplay loop muted playsinline controls controlslist="nodownload" preload="metadata" aria-label="Field site footage">
-    <source src="/assets/video/video_2.mp4" type="video/mp4" />
-  </video>
-</div>
+{% include whl_gallery.liquid %}
 
 ## Visit, Tour, or Partner With the Lab
 

@@ -809,6 +809,11 @@ footer .container {
   border-radius: 1rem;
   box-shadow: var(--whl-shadow);
 }
+/* Photos in the gallery are framed to match the 16:9 videos beside them. */
+img.whl-video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
 
 /* Title-case all page titles and section headings, so they match the
    uppercase nav and never read as lowercase ("facilities" -> "Facilities").
