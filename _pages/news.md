@@ -21,14 +21,16 @@ permalink: /news/
 description: Lab announcements, publications, grants, and student milestones.
 nav: true
 nav_order: 6
+
+# ----- Buttons under the news list (edited in the CMS, no HTML) -----
+footer_buttons:
+  - { label: "Subscribe via RSS", url: "/feed.xml", icon: "fas fa-rss", style: "primary" }
+  - { label: "Follow @WaterHydroLab", url: "https://x.com/WaterHydroLab", icon: "fab fa-x-twitter" }
+  - { label: "GitHub", url: "https://github.com/waterhydrolab", icon: "fab fa-github" }
+  - { label: "LinkedIn", url: "https://www.linkedin.com/in/golmar-golmohammadi-35791a17/", icon: "fab fa-linkedin" }
+  - { label: "Contact the lab", url: "/contact/", icon: "fas fa-paper-plane", style: "ghost" }
 ---
 
 {% include news.liquid %}
 
-<div class="whl-btn-row">
-  <a class="whl-btn whl-btn-primary" href="/feed.xml"><i class="fas fa-rss"></i> Subscribe via RSS</a>
-  <a class="whl-btn" href="https://x.com/WaterHydroLab" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> Follow @WaterHydroLab</a>
-  <a class="whl-btn" href="https://github.com/waterhydrolab" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-  <a class="whl-btn" href="https://www.linkedin.com/in/golmar-golmohammadi-35791a17/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-  <a class="whl-btn whl-btn-ghost" href="/contact/"><i class="fas fa-paper-plane"></i> Contact the lab</a>
-</div>
+{% include whl_buttons.liquid items=page.footer_buttons %}

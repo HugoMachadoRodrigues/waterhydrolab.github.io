@@ -13,17 +13,27 @@ title: publications
 description: Peer-reviewed publications by Dr. Golmar Golmohammadi and the Watershed Hydrology Lab, in reverse chronological order.
 nav: true
 nav_order: 5
+
+# ----- Buttons above the publication list (edited in the CMS, no HTML) -----
+top_buttons:
+  - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=cpXxmlYAAAAJ", icon: "fas fa-graduation-cap", style: "primary" }
+  - { label: "ORCID", url: "https://orcid.org/0000-0001-5532-3892", icon: "fab fa-orcid" }
+  - { label: "ResearchGate", url: "https://www.researchgate.net/profile/Golmar-Golmohammadi", icon: "fab fa-researchgate" }
+  - { label: "RSS", url: "/feed.xml", icon: "fas fa-rss" }
+  - {
+      label: "Request a reprint",
+      url: "mailto:g.golmohammadi@ufl.edu?subject=Reprint%20request%20%E2%80%94%20Watershed%20Hydrology%20Lab",
+      icon: "fas fa-envelope",
+      style: "ghost",
+    }
+# ----- Buttons below the publication list -----
+bottom_buttons:
+  - { label: "Research themes", url: "/projects/", icon: "fas fa-flask" }
+  - { label: "Meet the team", url: "/people/", icon: "fas fa-users" }
+  - { label: "Contact", url: "/contact/", icon: "fas fa-paper-plane", style: "primary" }
 ---
 
-<!-- _pages/publications.md -->
-
-<div class="whl-btn-row">
-  <a class="whl-btn whl-btn-primary" href="https://scholar.google.com/citations?user=cpXxmlYAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a class="whl-btn" href="https://orcid.org/0000-0001-5532-3892" target="_blank" rel="noopener"><i class="fab fa-orcid"></i> ORCID</a>
-  <a class="whl-btn" href="https://www.researchgate.net/profile/Golmar-Golmohammadi" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i> ResearchGate</a>
-  <a class="whl-btn" href="/feed.xml"><i class="fas fa-rss"></i> RSS</a>
-  <!--email_off--><a class="whl-btn whl-btn-ghost" href="mailto:g.golmohammadi@ufl.edu?subject=Reprint%20request%20%E2%80%94%20Watershed%20Hydrology%20Lab"><i class="fas fa-envelope"></i> Request a reprint</a><!--/email_off-->
-</div>
+{% include whl_buttons.liquid items=page.top_buttons %}
 
 <!-- Bibsearch Feature -->
 
@@ -35,8 +45,4 @@ nav_order: 5
 
 </div>
 
-<div class="whl-btn-row">
-  <a class="whl-btn" href="/projects/"><i class="fas fa-flask"></i> Research themes</a>
-  <a class="whl-btn" href="/people/"><i class="fas fa-users"></i> Meet the team</a>
-  <a class="whl-btn whl-btn-primary" href="/contact/"><i class="fas fa-paper-plane"></i> Contact</a>
-</div>
+{% include whl_buttons.liquid items=page.bottom_buttons %}
