@@ -218,12 +218,6 @@ wastewater, and soil samples via robotic sampling and spectrophotometry.
   </video>
 </div>
 
-<div class="whl-callout" markdown="1">
-**Add more photos or clips** in the site editor (**Other Pages → Facilities**):
-click the image button to upload a photo, or paste a `<video>` / `<iframe>` embed.
-Looping clips use `<video autoplay loop muted playsinline>`.
-</div>
-
 ## Visit, Tour, or Partner With the Lab
 
 <div class="whl-btn-row">
