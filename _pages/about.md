@@ -8,7 +8,7 @@
 #
 #  COMMON EDITS:
 #    - Update the `subtitle` line if titles or affiliations change.
-#    - Update the `more_info` block when the lab moves offices.
+#    - Update the `contact` block (org/address/phone/email) if the lab moves.
 #    - Tweak the announcements limit to show more/fewer news items.
 #    - Re-write the body paragraphs to refresh the lab description.
 # =============================================================================
@@ -52,13 +52,14 @@ profile:
   align: right
   image: team/golmar_golmohammadi.jpg # path is relative to /assets/img/
   image_circular: false # set to true for a round crop
-  # `more_info` is rendered as HTML directly under the photo. We use it for
-  # the lab's mailing address, phone, and email.
-  more_info: >
-    <p><strong>UF/IFAS RCREC</strong></p>
-    <p><a href="https://www.google.com/maps/search/?api=1&query=3401+Experiment+Station+Ona+FL+33865" target="_blank" rel="noopener">3401 Experiment Station<br>Ona, FL 33865</a></p>
-    <p>Phone: <a href="tel:+18633747053">(863) 374-7053</a></p>
-    <p>Email: <!--email_off--><a href="mailto:g.golmohammadi@ufl.edu">g.golmohammadi@ufl.edu</a><!--/email_off--></p>
+  # Contact card under the photo — simple fields (no HTML). The address links
+  # to Google Maps and the phone becomes a tel: link automatically.
+  contact:
+    org: "UF/IFAS RCREC"
+    address: "3401 Experiment Station, Ona, FL 33865"
+    office: ""
+    phone: "(863) 374-7053"
+    email: "g.golmohammadi@ufl.edu"
 
 # Show a "Selected publications" section below the bio. Papers marked
 # `selected={true}` in _bibliography/papers.bib appear here.

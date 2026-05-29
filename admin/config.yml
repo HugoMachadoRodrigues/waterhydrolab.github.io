@@ -65,7 +65,15 @@ collections:
               - { name: align, widget: hidden, default: right }
               - { name: image, label: "PI photo", widget: image }
               - { name: image_circular, label: "Round crop", widget: boolean, default: false }
-              - { name: more_info, label: "Contact card (HTML)", widget: text }
+              - name: contact
+                label: "Contact card (address, phone, email)"
+                widget: object
+                fields:
+                  - { name: org, label: "Organization / unit", widget: string, required: false }
+                  - { name: address, label: "Mailing address", widget: string, required: false }
+                  - { name: office, label: "Office / room (optional)", widget: string, required: false }
+                  - { name: phone, label: "Phone", widget: string, required: false }
+                  - { name: email, label: "Email", widget: string, required: false }
           - { name: selected_papers, widget: hidden, default: true }
           - { name: social, widget: hidden, default: true }
           - name: announcements

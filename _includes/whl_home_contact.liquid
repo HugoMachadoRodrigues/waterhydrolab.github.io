@@ -1,0 +1,31 @@
+{%- comment -%}
+  whl_home_contact.liquid — the lab/PI contact card under the homepage photo.
+  Built from page.profile.contact so editors fill simple fields (no HTML):
+    { org, address, office, phone, email }
+  The address auto-links to Google Maps, the phone becomes a tel: link, and the
+  email is wrapped in Cloudflare email-off markers (split across variables so a
+  code formatter can't rewrite them) so the address isn't obfuscated.
+{%- endcomment -%}
+{%- assign eo_open = '<!--email' | append: '_off-->' -%}
+{%- assign eo_close = '<!--/email' | append: '_off-->' -%}
+{%- assign c = page.profile.contact -%}
+{%- if c -%}
+  <div class="more-info">
+    {%- if c.org and c.org != '' -%}
+      <p><strong>{{ c.org | escape }}</strong></p>
+    {%- endif -%}
+    {%- if c.address and c.address != '' -%}
+      <p><a href="https://www.google.com/maps/search/?api=1&query={{ c.address | url_encode }}" target="_blank" rel="noopener">{{ c.address | escape }}</a></p>
+    {%- endif -%}
+    {%- if c.office and c.office != '' -%}
+      <p>{{ c.office | escape }}</p>
+    {%- endif -%}
+    {%- if c.phone and c.phone != '' -%}
+      {%- assign tel = c.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
+      <p>Phone: <a href="tel:+1{{ tel }}">{{ c.phone | escape }}</a></p>
+    {%- endif -%}
+    {%- if c.email and c.email != '' -%}
+      <p>Email: {{ eo_open }}<a href="mailto:{{ c.email }}">{{ c.email | escape }}</a>{{ eo_close }}</p>
+    {%- endif -%}
+  </div>
+{%- endif -%}
