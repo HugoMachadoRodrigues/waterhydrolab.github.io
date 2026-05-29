@@ -106,18 +106,49 @@ Open <https://watershedhydrologylab.com/admin/> and pick a collection:
 
 | Collection               | Edits                                                                                                                                                    |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Home page**            | Hero tagline, the three research pillars (add / edit / reorder), the PI photo + contact card, and the “About the Lab” text.                              |
+| **Home page**            | Hero **subtitle** (rich text) & tagline, the three research pillars (add / edit / reorder), the PI photo + **contact card** (organization, address, phone, email), and the “About the Lab” text.                              |
 | **News & Announcements** | Add / edit short announcements (homepage strip + News page).                                                                                             |
-| **Research Projects**    | The research-theme cards (title, cover image, description, order, full text).                                                                            |
-| **Team / People**        | Members list — **drag to reorder**, swap **photo**, edit **role/details** and **bio** per member; alumni grid + “Join the lab” block via the body field. |
-| **Other Pages**          | The text of the **Facilities** and **Contact** pages.                                                                                                    |
+| **Research Projects**    | The research-theme cards (title, **cover / banner image**, description, order, full text, related publications).                                                                            |
+| **Team / People**        | Members list — **drag to reorder**, swap **photo**, edit **Role / Focus / Joined** and **Bio** per member; alumni grid + “Join the lab” block via the body field. |
+| **Other Pages**          | **Facilities** (instruments, lab equipment, Field Gallery, map, buttons), **Contact** (PI card, map, affiliations, buttons, callout), the **News** page, and the **Publications** page buttons. |
+| **Downloads & QR codes** | Preview, download, or replace the QR codes and share cards (also on the site's **Downloads** page).                                                       |
 
-### Adding images, maps, and videos (e.g. on Facilities)
+### Adding images, maps, and videos — no HTML needed
 
-- **Image:** click the image button in the editor (uploads to
-  `assets/img/uploads/`), or type `![caption](/assets/img/uploads/file.jpg)`.
-- **Map:** paste a Google Maps _embed_ iframe inside `<div class="whl-map"> … </div>`.
-- **Video:** paste a YouTube/Vimeo embed iframe inside `<div class="whl-embed"> … </div>`.
+- **Photo:** click the image button on any image field (uploads to
+  `assets/img/uploads/`).
+- **Map:** in the page's **Map** field, just type the **address** — the map
+  builds itself (optional zoom, 1–20).
+- **Video (Facilities → Field Gallery):** add a gallery item and either
+  **upload** a video file, or paste a normal **YouTube/Vimeo link**
+  (e.g. `https://youtu.be/abc123`) — the player is built for you.
+
+### Everything is editable without HTML ✅
+
+Every field is a **plain text box**, a **rich-text editor** (with a link
+button), an **image / file picker**, or a **list** you add rows to. You never
+type or paste HTML. Quick reference:
+
+| To…                       | Where                                        | How (no HTML)                                       |
+| ------------------------- | -------------------------------------------- | --------------------------------------------------- |
+| Edit the hero subtitle    | Home → **Hero subtitle**                     | Type text; use the **link button** for links        |
+| Edit the PI contact card  | Home → **Contact card**                      | Fill Organization / Address / Office / Phone / Email |
+| Set a person's role       | People → a member                            | Fill the **Role**, **Focus**, **Joined** boxes      |
+| Write a bio / About text  | People → Bio · Home → About                  | Rich-text editor (bold, links, lists)               |
+| Add a photo               | any **image** field                          | Click → upload                                      |
+| Add a map                 | Facilities / Contact → **Map**               | Type the **address**                                |
+| Add a video               | Facilities → **Field Gallery**               | Upload a file, or paste a **YouTube/Vimeo link**    |
+| Add a button              | any **Buttons** list                         | Fill Label + Link (+ optional icon)                 |
+| Get a QR code             | **Downloads & QR codes** / site **Downloads** | Click **Download**                                  |
+
+> The only "code-looking" lines are the `{% … %}` **include** lines at the
+> bottom of a few page bodies (Facilities, Contact, News, Publications). They
+> pull in the structured content above — **leave them exactly as they are.**
+> They are not HTML and never need editing.
+>
+> The Research **index** grid and the page **design** (`_layouts/`, `_includes/`,
+> `assets/whl.css`) live in code; research content itself is edited in the
+> **Research Projects** collection.
 
 ---
 
@@ -187,11 +218,11 @@ Open <https://watershedhydrologylab.com/admin/> and pick a collection:
 - **Login page never appears / "domain not allowed"** → `ALLOWED_DOMAINS` on the
   Worker must include the domain you are visiting. Use
   `watershedhydrologylab.com` (not the `*.pages.dev` URL).
-- **`mailto:` buttons don't open an email** → this is Cloudflare's **Email
-  Address Obfuscation** (Scrape Shield) rewriting `mailto:` links into
-  `/cdn-cgi/l/email-protection#…`. Turn it **off**:
-  Cloudflare dashboard → `watershedhydrologylab.com` → **Scrape Shield** →
-  **Email Address Obfuscation** → **Off**.
+- **`mailto:` buttons not opening an email?** Addresses entered in the CMS
+  **Email** fields are rendered with Cloudflare "email_off" markers, so they
+  stay clickable (not obfuscated) — you do **not** need to change any Cloudflare
+  setting. If you ever hand-write an address somewhere else and it stops working,
+  use the dedicated **Email** field instead; it's protected automatically.
 - **A field disappears after an editor saves a page** → the page's front matter
   has a field not declared in `admin/config.yml`. Every structural field must be
   listed there (most are `hidden`) so Sveltia preserves it. Don't delete the

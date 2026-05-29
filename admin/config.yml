@@ -270,7 +270,7 @@ collections:
             fields:
               - { name: file, label: "Photo or video file", widget: file, required: false }
               - { name: caption, label: "Caption (optional)", widget: string, required: false }
-              - { name: embed, label: "…or paste a YouTube/Vimeo embed (instead of a file)", widget: text, required: false }
+              - { name: embed, label: "…or paste a YouTube/Vimeo link (instead of a file)", widget: string, required: false }
           - name: map
             label: "Map (just type an address)"
             widget: object
