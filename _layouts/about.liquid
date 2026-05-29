@@ -61,7 +61,17 @@ layout: default
       {% if page.hero.pillars %}
         <div class="whl-pillars">
           {% for pillar in page.hero.pillars %}
+            {%- comment -%}
+              Reuse the cover image of the Research project this pillar links to,
+              so the thumbnail always matches that project's card.
+            {%- endcomment -%}
+            {% assign linked_project = site.projects | where: 'url', pillar.href | first %}
             <a class="whl-pillar" href="{{ pillar.href | relative_url }}">
+              {% if linked_project and linked_project.img %}
+                <span class="whl-pillar-thumb">
+                  <img src="{{ linked_project.img | relative_url }}" alt="" loading="lazy">
+                </span>
+              {% endif %}
               <h3>{{ pillar.title }}</h3>
               <p>{{ pillar.text }}</p>
               <span class="whl-pillar-more">Learn more <i class="fas fa-arrow-right"></i></span>
