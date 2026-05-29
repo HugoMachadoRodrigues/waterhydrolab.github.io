@@ -1,0 +1,16 @@
+{
+  // Cloudflare Workers deploy config for the Watershed Hydrology Lab website.
+  //
+  // The site is a STATIC Jekyll build: the dashboard "Build command" produces
+  // the _site/ folder, and this file tells `wrangler deploy` to publish that
+  // folder as static assets (no Worker script needed). Keeping it in the repo
+  // means the deploy config can't be lost if the project is ever recreated.
+  //
+  // NOTE: "name" must match the Worker's name in the Cloudflare dashboard.
+  "name": "waterhydrolab",
+  "compatibility_date": "2025-05-01",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  }
+}
