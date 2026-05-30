@@ -1,0 +1,9 @@
+# Full Python toolchain for the GitHub Actions WORKFLOWS — NOT the site build.
+#   - rendercv[full]: generates the CV PDF        (.github/workflows/render-cv.yml)
+#   - scholarly:      fetches Google Scholar cites (.github/workflows/update-citations.yml)
+# These are deliberately kept OUT of requirements.txt so the Cloudflare site
+# build doesn't reinstall them (typst, selenium, sphinx, fonts) on every edit.
+nbconvert
+pyyaml
+rendercv[full]
+scholarly

@@ -1,4 +1,8 @@
+# Slim Python deps AUTO-INSTALLED by the Cloudflare site build.
+# Only what the Jekyll build itself needs: nbconvert (Jupyter notebook
+# conversion) + pyyaml. The heavy CV/citation tools (rendercv, scholarly) live
+# in requirements-tools.txt and are installed ONLY by the GitHub Actions
+# workflows that use them (render-cv, update-citations) — so the site build
+# stays fast (it was reinstalling typst, selenium, sphinx, etc. on every edit).
 nbconvert
 pyyaml
-rendercv[full]
-scholarly
