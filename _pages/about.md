@@ -1,42 +1,11 @@
 ---
-# =============================================================================
-#  HOMEPAGE  ( permalink "/"  =>  https://watershedhydrologylab.com/ )
-# =============================================================================
-#  This is the lab's About / home page. Everything between the "---" fences
-#  is YAML front matter that the al-folio theme reads. The content below
-#  the closing "---" is the page body, written in Markdown.
-#
-#  COMMON EDITS:
-#    - Update the `subtitle` line if titles or affiliations change.
-#    - Update the `contact` block (org/address/phone/email) if the lab moves.
-#    - Tweak the announcements limit to show more/fewer news items.
-#    - Re-write the body paragraphs to refresh the lab description.
-# =============================================================================
-
-layout: about # use the "about" layout — do not change
-title: about # the navbar label
-permalink: / # this page lives at the site root
-
-# Hero subtitle — the smaller line under the lab name on the homepage.
-# Edit it in the CMS (Home -> "Hero subtitle"); use the link button to add
-# links — no HTML needed. Written in Markdown ([text](https://link)).
-subtitle: >
-  Led by [Dr. Golmar Golmohammadi](https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/),
-  Assistant Professor of Watershed Hydrology and Biogeochemistry ·
-  [UF/IFAS Range Cattle Research and Education Center](https://rcrec-ona.ifas.ufl.edu/) ·
-  [Department of Soil, Water, and Ecosystem Sciences](https://soils.ifas.ufl.edu/)
-
-# ----- Landing hero -----
-# Rendered by _layouts/about.liquid as an impactful banner at the top of the
-# homepage: lab logo, name, tagline, primary buttons, and three research
-# "pillars". Edit the tagline/pillars here; the layout handles the styling.
+layout: about
+title: about
+permalink: /
+subtitle: Led by [Dr. Golmar Golmohammadi](https://soils.ifas.ufl.edu/people/faculty/golmar-golmohammadi/), Assistant Professor of Watershed Hydrology and Biogeochemistry · [UF/IFAS Range Cattle Research and Education Center](https://rcrec-ona.ifas.ufl.edu/) · [Department of Soil, Water, and Ecosystem Sciences](https://soils.ifas.ufl.edu/)
 hero:
-  logo: assets/img/whl_logo.png
-  tagline: >
-    Advancing the science of water across agricultural landscapes, rangelands,
-    and watersheds — uniting physically based modeling, artificial intelligence,
-    and a dense field-observation network to safeguard water quantity and
-    quality under a changing climate.
+  logo: /assets/img/uploads/Logo_circle.png
+  tagline: Advancing the science of water across agricultural landscapes, rangelands, and watersheds — uniting physically based modeling, artificial intelligence, and a dense field-observation network to safeguard water quantity and quality under a changing climate.
   pillars:
     - title: Hydrologic &amp; Water-Quality Modeling
       text: Field-to-watershed simulation of flow, storage, and nutrient transport with SWAT+, MODFLOW, and DRAINMOD.
@@ -47,47 +16,33 @@ hero:
     - title: Data-Driven Decision Support
       text: Models, sensor networks, and stakeholder input to evaluate Best Management Practices for sustainable agriculture.
       href: /projects/3_decision_support/
-
-# ----- Profile picture & contact card on the right side of the homepage -----
 profile:
   align: right
-  image: team/golmar_golmohammadi.jpg # path is relative to /assets/img/
-  image_circular: false # set to true for a round crop
-  # Contact card under the photo — simple fields (no HTML). The address links
-  # to Google Maps and the phone becomes a tel: link automatically.
+  image: team/golmar_golmohammadi.jpg
+  image_circular: false
   contact:
-    org: "UF/IFAS RCREC"
-    address: "3401 Experiment Station, Ona, FL 33865"
-    office: ""
-    phone: "(863) 374-7053"
-    email: "g.golmohammadi@ufl.edu"
-
-# Show a "Selected publications" section below the bio. Papers marked
-# `selected={true}` in _bibliography/papers.bib appear here.
+    org: UF/IFAS RCREC
+    address: 3401 Experiment Station, Ona, FL 33865
+    office: ''
+    phone: (863) 374-7053
+    email: g.golmohammadi@ufl.edu
 selected_papers: true
-
-# Render the row of social-media / academic-profile icons at the bottom.
-# The icons come from _data/socials.yml.
 social: true
-
-# News strip on the homepage. Add files to _news/ to populate it.
 announcements:
   enabled: true
-  scrollable: true # add a vertical scrollbar after the first few items
-  limit: 5 # max items to show; leave blank to show all
-
-# Latest blog posts. We don't run a blog right now, so disabled.
+  scrollable: true
+  limit: 5
 latest_posts:
   enabled: false
   scrollable: true
   limit: 3
-
-# Photo gallery under the "About the Lab" text. Add as many photos as you like
-# in the CMS (Home -> "About photos") — each one is just a click-to-upload.
 about_photos:
-  - { image: assets/img/rcrec-building.jpg, caption: "RCREC — Ona, Florida" }
-  - { image: assets/img/instruments/weather-station.jpg, caption: "Field weather station" }
-  - { image: assets/img/instruments/lysimeter.jpg, caption: "Lysimeter installation" }
+  - image: assets/img/rcrec-building.jpg
+    caption: RCREC — Ona, Florida
+  - image: assets/img/instruments/weather-station.jpg
+    caption: Field weather station
+  - image: assets/img/instruments/lysimeter.jpg
+    caption: Lysimeter installation
 ---
 
 ## About the Lab
