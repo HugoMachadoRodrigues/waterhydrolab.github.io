@@ -18,7 +18,7 @@ hero:
       href: /projects/3_decision_support/
 profile:
   align: right
-  image: team/golmar_golmohammadi.jpg
+  image: /assets/img/uploads/Screenshot 2023-03-31 134020.png
   image_circular: false
   contact:
     org: UF/IFAS RCREC
